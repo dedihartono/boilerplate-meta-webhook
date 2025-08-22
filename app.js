@@ -23,4 +23,6 @@ app.get('/webhooks',  (req, res) => {
    res.sendStatus(400);
  }
 })
-module.exports.handler = serverless(app);
+
+// For Vercel deployment
+module.exports = app;
